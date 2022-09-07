@@ -16,7 +16,7 @@ public class SnakeAndLadder {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome to Snake and Ladder Program");
 
-		int startPosition = 0;
+	
 
 	}
 
