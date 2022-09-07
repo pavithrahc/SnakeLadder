@@ -14,7 +14,7 @@ public class SnakeAndLadder {
 	 */
 		
 		public static void main(String[] args) {
-			System.out.println("Welcome to Snake and Ladder Program..");
+			System.out.println("Welcome to Snake and Ladder Program");
 
 			int startPosition = 0;
 
@@ -39,6 +39,9 @@ public class SnakeAndLadder {
 
 				case 1:
 					startPosition += dice;
+					if (startPosition > maxPosition) {
+						startPosition = startPosition - dice;
+					}
 					break;
 
 				case 2:
@@ -48,7 +51,7 @@ public class SnakeAndLadder {
 					break;
 				}
 
-				System.out.println("Start Position:-" + startPosition);
+				System.out.println("End Position:-" + startPosition);
 
 			}
 
